@@ -1,4 +1,4 @@
-/* FILE: js/main.js */
+/* FILE: js/main.js - FIXED WITH LOADER */
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log("CareerSync JS Loaded.");
@@ -57,14 +57,49 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 4000); 
     }
 
-    // --- 4. APP SHOWCASE SLIDER (Manual) ---
+    // --- 4. APP SHOWCASE SLIDER (FIXED WITH LOADER) ---
     const uiSlider = document.getElementById('ui-slider');
     const indicator = document.getElementById('slide-indicator');
+    const loader = document.getElementById('ui-loader');
+    
     const uiFrames = [
-        'assets/UIFrame1.png', 'assets/UIFrame2.png', 'assets/UIFrame3.png',
-        'assets/UIFrame4.png', 'assets/UIFrame5.png', 'assets/UIFrame6.png'
+        'assets/UIFrame1.png', 
+        'assets/UIFrame2.png', 
+        'assets/UIFrame3.png',
+        'assets/UIFrame4.png', 
+        'assets/UIFrame5.png', 
+        'assets/UIFrame6.png'
     ];
+    
+    // Preload image pertama agar cache browser siap
+    const preloadImages = () => {
+        uiFrames.forEach((src) => {
+            const img = new Image();
+            img.src = src;
+        });
+    };
+    window.onload = preloadImages;
+
     let currentUI = 0;
+
+    function updateUISlider() {
+        if (uiSlider && indicator && loader) {
+            // Tampilkan Loader
+            loader.style.display = 'block';
+            uiSlider.style.opacity = 0.3; 
+
+            const img = new Image();
+            img.src = uiFrames[currentUI];
+
+            img.onload = () => {
+                uiSlider.src = uiFrames[currentUI]; 
+                loader.style.display = 'none';      
+                uiSlider.style.opacity = 1;         
+            };
+
+            indicator.innerText = `${currentUI + 1} / ${uiFrames.length}`;
+        }
+    }
 
     window.nextSlide = function() {
         currentUI = (currentUI + 1) % uiFrames.length;
@@ -75,13 +110,6 @@ document.addEventListener('DOMContentLoaded', () => {
         currentUI = (currentUI - 1 + uiFrames.length) % uiFrames.length;
         updateUISlider();
     };
-
-    function updateUISlider() {
-        if (uiSlider && indicator) {
-            uiSlider.src = uiFrames[currentUI];
-            indicator.innerText = `${currentUI + 1} / ${uiFrames.length}`;
-        }
-    }
 });
 
 // --- 5. ACCORDION LOGIC ---
