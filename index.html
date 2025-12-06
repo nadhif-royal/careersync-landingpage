@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerSync — Simulate Work, Verify Skills, Get Hired!</title>
+    
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="assets/TransparentLogoWithText.png" alt="CareerSync Logo" onerror="this.src='https://placehold.co/200x60/0D6DFF/FFFFFF?text=CareerSync'">
+            </div>
+            
+            <nav class="nav-links">
+                <a href="#about">Why Us</a>
+                <a href="#features">Features</a>
+                <a href="#showcase">App Preview</a>
+                <a href="#founder">Founder</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="mobile-menu-btn" aria-label="Open Menu">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <a href="#about">Why Us</a>
+        <a href="#features">Features</a>
+        <a href="#showcase">App Preview</a>
+        <a href="#founder">Founder</a>
+    </div>
+
+    <section id="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="tagline-pill">Simulate Work, Verify Skills, Get Hired!</span>
+                <h1>Bridging Campus Theory to Career Reality.</h1>
+                
+                <p><strong>CareerSync</strong> adalah platform akselerasi karir berbasis AI yang membantu Gen-Z menutup <em>skills gap</em>. Kerjakan simulasi tugas nyata, dapatkan validasi mentor, dan bangun portofolio yang dipercaya rekruter.</p>
+                
+                <div class="cta-group">
+                    <a href="#features" class="btn btn-primary">Explore Features <i class="ph-bold ph-arrow-right"></i></a>
+                    <a href="#showcase" class="btn btn-outline">View Demo</a>
+                </div>
+
+                <div class="trust-signals">
+                    <span><i class="ph-fill ph-robot"></i> AI-Driven Tasks</span>
+                    <span><i class="ph-fill ph-check-circle"></i> Mentor Verified</span>
+                    <span><i class="ph-fill ph-briefcase"></i> Real Portfolio</span>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="poster-slider">
+                    <img id="hero-poster" src="assets/PosterMockup1.png" alt="CareerSync App Mockup" onerror="this.src='https://placehold.co/600x400/052659/FFFFFF?text=PosterMockup1'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why CareerSync?</h2>
+                <p>Memecahkan masalah "Butuh pengalaman untuk kerja, tapi butuh kerja untuk dapat pengalaman".</p>
+            </div>
+            <div class="bento-grid">
+                <div class="bento-item main-value">
+                    <div class="bento-content">
+                        <h3><i class="ph-fill ph-brain"></i> Active Learning vs Passive</h3>
+                        <p>Kursus video biasa membosankan dan pasif. CareerSync menggunakan <strong>Micro-Simulations</strong> (15-30 menit) yang interaktif, membuatmu belajar sambil praktek langsung layaknya karyawan sungguhan.</p>
+                    </div>
+                </div>
+
+                <div class="bento-item highlight-blue">
+                    <i class="ph-fill ph-seal-check"></i>
+                    <h3>Verified Badge</h3>
+                    <p>Sertifikat biasa hanya bukti "menonton". Badge kami adalah bukti "kompetensi" yang divalidasi manusia.</p>
+                </div>
+
+                <div class="bento-item">
+                    <i class="ph-fill ph-trend-up"></i>
+                    <h3>Career Bridge</h3>
+                    <p>Jembatan instan dari teori kampus ke kebutuhan industri tanpa birokrasi magang yang rumit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ai-human" style="padding: 80px 0; background: #F8FAFC;">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Perfect Synergy</h2>
+                <p>Mengapa CareerSync berbeda dari kursus online biasa.</p>
+            </div>
+
+            <div class="ai-human-card">
+                <div class="ai-content">
+                    <h3><i class="ph-fill ph-brain"></i> AI + Human Touch</h3>
+                    <p>
+                        Berbeda dengan AI standar, sistem kami menggabungkan kecerdasan 
+                        <strong>Generative AI</strong> untuk simulasi tugas interaktif dengan 
+                        <strong>Validasi Mentor Manusia (Human-in-the-Loop)</strong>. 
+                        Hasilnya? Portofolio yang tidak hanya cepat dibuat, tapi juga terpercaya dan valid di mata rekruter.
+                    </p>
+                </div>
+                <img src="https://www.yomu.ai/images/blog-images/writing/ai-human-content-creation.webp" alt="AI Human Collaboration" onerror="this.src='https://placehold.co/600x400?text=AI+Human+Touch'">
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container features-container">
+            <div class="features-text">
+                <h2>Unggulan Kami</h2>
+                <p>4 Fitur utama yang dirancang untuk kesiapan karirmu.</p>
+                
+                <div class="accordion">
+                    <div class="accordion-item active">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="acc-title"><i class="ph-fill ph-robot"></i> AI-Driven Micro-Internships</div>
+                            <i class="ph-bold ph-caret-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Fitur inti di mana kamu mengerjakan simulasi tugas nyata (misal: Data Analyst, Content Writer) dengan durasi singkat. Skenario tugas dirancang interaktif oleh AI Generatif yang bertindak sebagai "Virtual Supervisor".</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="acc-title"><i class="ph-fill ph-seal-check"></i> Verification Marketplace</div>
+                            <i class="ph-bold ph-caret-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Sistem validasi berjenjang. Hasil kerjamu bisa direview oleh Mentor Praktisi atau UMKM dengan biaya mikro yang sangat terjangkau. Dapatkan "Verified Badge" (Centang Biru) untuk portofoliomu.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="acc-title"><i class="ph-fill ph-storefront"></i> UMKM Real-Project Pipeline</div>
+                            <i class="ph-bold ph-caret-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Kanal khusus yang menghubungkan mahasiswa dengan tugas mikro nyata dari UMKM lokal (contoh: Foto produk, input data). Memberikan pengalaman kerja real-world yang berdampak ekonomi.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <div class="acc-title"><i class="ph-fill ph-wallet"></i> Stackable Credential Wallet</div>
+                            <i class="ph-bold ph-caret-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Dompet digital portofolio di dalam aplikasi yang mengompilasi seluruh simulasi tugas yang telah diverifikasi menjadi satu transkrip kompetensi digital yang bisa diekspor ke LinkedIn/PDF.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-image">
+                <img src="assets/UIFrame2.png" alt="Feature Preview" class="float-img" onerror="this.src='https://placehold.co/400x700/0D6DFF/FFFFFF?text=Feature+Preview'">
+            </div>
+        </div>
+    </section>
+
+    <section id="showcase">
+        <div class="container">
+            <div class="section-header">
+                <h2>Inside The App</h2>
+                <p>Intip antarmuka CareerSync yang didesain mobile-first untuk Gen-Z.</p>
+            </div>
+            
+            <div class="mockup-wrapper">
+                <div class="frameless-container">
+                    <img id="ui-slider" src="assets/UIFrame1.png" alt="App Screen" class="frameless-img" onerror="this.src='https://placehold.co/1080x1920/052659/FFFFFF?text=UIFrame1'">
+                </div>
+                
+                <div class="slider-controls">
+                    <button onclick="prevSlide()"><i class="ph-bold ph-caret-left"></i></button>
+                    <span id="slide-indicator">1 / 6</span>
+                    <button onclick="nextSlide()"><i class="ph-bold ph-caret-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="founder">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Visionary</h2>
+                <p>Dibalik layar pengembangan CareerSync.</p>
+            </div>
+            
+            <div class="founder-card">
+                <div class="founder-img">
+                    <img src="assets/CEO_Nadhif.png" alt="Nadhif Rif'at Rasendriya" onerror="this.src='https://placehold.co/400x400/0D6DFF/FFFFFF?text=Nadhif'">
+                </div>
+                <div class="founder-info">
+                    <h3>Nadhif Rif'at Rasendriya</h3>
+                    <span class="role">Product Manager & Founder</span>
+                    <p class="bio">
+                        Berkomitmen menjembatani kesenjangan antara pendidikan formal dan kebutuhan industri. 
+                        Dengan CareerSync, Nadhif membangun ekosistem di mana setiap mahasiswa memiliki kesempatan 
+                        yang sama untuk membuktikan kompetensi mereka melalui simulasi nyata dan validasi terpercaya.
+                    </p>
+                    <div class="founder-socials">
+                        <a href="https://www.linkedin.com/in/royalnadhif50/" target="_blank"><i class="ph-fill ph-linkedin-logo"></i></a>
+                        <a href="https://www.instagram.com/royal_nadhif/" target="_blank"><i class="ph-fill ph-instagram-logo"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="assets/TransparentLogoWithText.png" alt="CareerSync" class="footer-logo" onerror="this.style.display='none';">
+                
+                <p>Simulate Work, Verify Skills, Get Hired!</p>
+            </div>
+            <div class="footer-links">
+                <h5>Product</h5>
+                <a href="#features">Features</a>
+                <a href="#showcase">Showcase</a>
+            </div>
+            <div class="footer-links">
+                <h5>Legal</h5>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Guidelines</a>
+            </div>
+            <div class="footer-contact">
+                <h5>Contact</h5>
+                <a href="mailto:hello@careersync.id" class="btn btn-contact">
+                    <i class="ph-bold ph-envelope-simple"></i> hello@careersync.id
+                </a>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2025 CareerSync. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/royalnadhif50/" target="_blank"><i class="ph-fill ph-linkedin-logo"></i></a>
+                <a href="https://www.instagram.com/royal_nadhif/" target="_blank"><i class="ph-fill ph-instagram-logo"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
