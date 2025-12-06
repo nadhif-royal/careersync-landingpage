@@ -6,7 +6,7 @@
 
 > **Tagline:** Simulate Work, Verify Skills, Get Hired!
 
-🔗 **Demo:** [Lihat Demo](https://nadhif-royal.github.io/careersync-landingpage/) *(Pastikan GitHub Pages diaktifkan)*
+🔗 **Demo:** [Lihat Demo](https://nadhif-royal.github.io/careersync-landingpage/) 
 
 ## 🚀 Tentang Proyek
 
@@ -73,5 +73,4 @@ Desain menggunakan kombinasi warna Biru yang melambangkan kepercayaan dan teknol
 
 © 2025 CareerSync. All rights reserved.
 
-```
-```
+
